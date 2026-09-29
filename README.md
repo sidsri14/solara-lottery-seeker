@@ -1,32 +1,48 @@
-# React + TypeScript + Vite
+# 🎰 SOLARA: On-Chain Weekly Lottery & Seeker dApp Launchpad
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+> **Interactive 6-Bracket Payout Simulator, VRF Verifier & Content Studio for SOLARA Lotto on Solana Mobile.**  
+> Built for the official **SOLARA Lottery Bounty ($500 USDC Pool)** on [Superteam Earn](https://superteam.fun/earn).
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ⚡ Why SOLARA: Replacing Opaque Lotteries with Verifiable Math
 
-## React Compiler
+Traditional centralized lotteries suffer from:
+- ❌ **Opaque RNG**: Unverifiable black-box random number generation.
+- ❌ **Predatory Margins**: Centralized operators skimming 50%+ of all ticket sales.
+- ❌ **Delayed Settlement**: Weeks of bureaucratic payout verification.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**SOLARA Lotto** fixes this on Solana:
+- ⚡ **100% On-Chain Settlement**: Draws execute autonomously every Thursday at 3:00 PM UTC.
+- 🎲 **Verifiable Randomness (VRF)**: Cryptographically proven entropy recorded on-chain.
+- 📱 **Solana Mobile & Seeker Native**: Direct Seed Vault biometric signing and instant prize claims into self-custody.
 
-## Expanding the Oxlint configuration
+---
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## 🛠️ Features & Interactive Launchpad
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+1. **6-Tier Bracket Payout Simulator**: Interactive calculator modeling payout distributions across Match 1 (2%) through Match 6 (40% Jackpot).
+2. **Rollover Compounding Engine**: Real-time simulation of jackpot growth when higher match tiers roll over.
+3. **Seeker dApp Store Terminal**: Mobile-first UI optimized for Solana Seeker Seed Vault hardware security.
+4. **Thread & Content Studio**: 5-post educational campaign ready for instant publication on X/Twitter.
+
+---
+
+## 🚀 Running Locally
+
+```bash
+# Clone the repository
+git clone https://github.com/sidsri14/solara-lottery-seeker.git
+cd solara-lottery-seeker
+
+# Install dependencies
+npm install
+
+# Start local server (Port 5193)
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+---
+
+## 📜 License
+MIT © 2026 Siddharth Srivastava (@sidsri14)
